@@ -312,35 +312,35 @@ const helpContent = {
 		body: '烟花越大绽放范围就越大，但是烟花越大，设备所需的性能也会增多，大的烟花可能导致你的设备卡顿。'
 	},
 	quality: {
-		header: '画质',
+		header: '画面质量',
 		body: '如果动画运行不流畅，你可以试试降低画质。画质越高，烟花绽放后的火花数量就越多，但高画质可能导致你的设备卡顿。'
 	},
 	skyLighting: {
-		header: '照亮天空',
+		header: '光影效果',
 		body: '烟花爆炸时，背景会被照亮。如果你的屏幕看起来太亮了，可以把它改成“暗”或者“无”。'
 	},
 	scaleFactor: {
-		header: '缩放',
+		header: '界面缩放',
 		body: '使你与烟花离得更近或更远。对于较大的烟花，你可以选择更小的缩放值，尤其是在手机或平板电脑上。'
 	},
 	autoLaunch: {
-		header: '自动放烟花',
+		header: '自动发射',
 		body: '开启后你就可以坐在你的设备屏幕前面欣赏烟花了，你也可以关闭它，但关闭后你就只能通过点击屏幕的方式来放烟花。'
 	},
 	finaleMode: {
-		header: '同时放更多的烟花',
+		header: '全量模式',
 		body: '可以在同一时间自动放出更多的烟花（但需要开启先开启“自动放烟花”）。'
 	},
 	hideControls: {
-		header: '隐藏控制按钮',
+		header: '纯净界面',
 		body: '隐藏屏幕顶部的按钮。如果你要截图，或者需要一个无缝的体验，你就可以将按钮隐藏，隐藏按钮后你仍然可以在右上角打开设置。'
 	},
 	fullscreen: {
-		header: '全屏',
-		body: '切换至全屏模式'
+		header: '全屏显示',
+		body: '即切换至全屏模式'
 	},
 	longExposure: {
-		header: '保留烟花的火花',
+		header: '保留残影',
 		body: '可以保留烟花留下的火花'
 	}
 };
@@ -788,18 +788,18 @@ function randomFastShell() {
 
 
 const shellTypes = {
-	'Random': randomShell,
-	'Crackle': crackleShell,
-	'Crossette': crossetteShell,
-	'Crysanthemum': crysanthemumShell,
-	'Falling Leaves': fallingLeavesShell,
-	'Floral': floralShell,
-	'Ghost': ghostShell,
-	'Horse Tail': horsetailShell,
-	'Palm': palmShell,
-	'Ring': ringShell,
-	'Strobe': strobeShell,
-	'Willow': willowShell
+	'Random[随机]': randomShell,
+	'Crackle[噼啪]': crackleShell,
+	'Crossette[裂焰]': crossetteShell,
+	'Crysanthemum[菊花]': crysanthemumShell,
+	'Falling_Leaves[落叶]': fallingLeavesShell,
+	'Floral[散花]': floralShell,
+	'Ghost[鬼影]': ghostShell,
+	'Horse_Tail[马尾]': horsetailShell,
+	'Palm[掌状]': palmShell,
+	'Ring[圈形]': ringShell,
+	'Strobe[脉冲]': strobeShell,
+	'Willow[柳树]': willowShell
 };
 
 const shellNames = Object.keys(shellTypes);
@@ -2297,7 +2297,7 @@ if (IS_HEADER) {
 	init();
 } else {
 	// Allow status to render, then preload assets and start app.
-	setLoadingStatus('正在点燃导火线');
+	setLoadingStatus('正在点燃导火线🔥');
 	setTimeout(() => {
 		soundManager.preload()
 		.then(
